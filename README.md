@@ -96,7 +96,7 @@ Both apps ensure that the current game is loaded from the session before any con
 ANS :การดำเนินการเหล่านี้ทำให้สามารถระบุวิธีการที่ควรดำเนินการก่อนหรือหลังการดำเนินการบางอย่างของคอนโทรลเลอร์ได้ โดยทั่วไป before_action จะใช้สำหรับงานต่างๆ เช่น การตรวจสอบสิทธิ์ การจัดการเซสชัน หรือการตั้งค่าตัวแปร ในขณะที่ after_action จะใช้สำหรับงานหลังการประมวลผล เเละจะพบในไฟล์ app/controllers
 
 **Q3.2.** A popular serialization format for exchanging data between Web apps is [JSON](https://en.wikipedia.org/wiki/JSON).  Why wouldn't it work to use JSON instead of YAML?  (Hint: try replacing `YAML.load()` with `JSON.parse()` and `.to_yaml` with `.to_json` to do this test.  You will have to clear out your cookies associated with `localhost:3000`, or restart your browser with a new Incognito/Private Browsing window, in order to clear out the `session[]`.  Based on the error messages you get when trying to use JSON serialization, you should be able to explain why YAML serialization works in this case but JSON doesn't.)
-ANS : เหตุผลหลักที่ JSON ไม่สามารถแทนที่ YAML เป็นเพราะ
+ANS : เหตุผลหลักที่ JSON ไม่สามารถแทนที่ YAML เป็นเพราะ การจัดเก็บข้อมูลที่แตกต่างกันและรูปแบบที่กำหนดส่วนมากจะเป็น YAML
 
 ## 4. Views
 
